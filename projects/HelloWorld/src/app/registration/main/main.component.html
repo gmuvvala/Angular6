@@ -1,3 +1,12 @@
-<p>
-  registration main works!
-</p>
+<form #regModelForm="ngForm">
+ <label for ="firstName">First Name :</label> 
+<input type="text" [(ngModel)]="model.firstName" id = "firstName" name="firstName"/>
+
+<label for ="lastName">Last Name</label> 
+<input type="text" [(ngModel)]="model.lastName" id = "lastName" name="lastName"/>
+
+<label for ="phone">Phone number</label> 
+<input type="text" [(ngModel)]="model.phone" id = "phone" name="phone"/>
+
+</form>
+
